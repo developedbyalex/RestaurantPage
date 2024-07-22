@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Royal Oak Restaurant</title>
+      <link rel="stylesheet" href="./css/style.css">
+      <script src="./js/script.js" defer></script>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar">
+            <div class="logo">The Royal Oak</div>
+            <ul class="nav-links">
+               <li><a href="#home">Home</a></li>
+               <li><a href="#menu">Menu</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+               <div class="line1"></div>
+               <div class="line2"></div>
+               <div class="line3"></div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section id="home" class="hero">
+            <h1>Welcome to The Royal Oak</h1>
+            <p>Experience culinary excellence in every bite</p>
+            <a href="#reservation" class="cta-button">Reserve a Table</a>
+         </section>
+         <section id="menu" class="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+               <button class="category-btn active" data-category="starters">Starters</button>
+               <button class="category-btn" data-category="mains">Mains</button>
+               <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-grid">
+               <!-- Starters -->
+               <div class="menu-item" data-category="starters">
+                  <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/bruschetta-recipe-1-2448fad.jpg" alt="Bruschetta">
+                  <h3>Bruschetta</h3>
+                  <p>Toasted bread topped with fresh tomatoes, garlic, and basil.</p>
+               </div>
+               <div class="menu-item" data-category="starters">
+                  <img src="https://www.modernhoney.com/wp-content/uploads/2021/07/Caprese-Salad-1-scaled.jpg" alt="Caprese Salad">
+                  <h3>Caprese Salad</h3>
+                  <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.</p>
+               </div>
+               <!-- Mains -->
+               <div class="menu-item" data-category="mains">
+                  <img src="https://www.eatingwell.com/thmb/eO2pNuaYENjSpJcRAjrgkHdQFNo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7969212-grilled-salmon-and-vegetables-with-charred-lemon-vinaigrette-beauty-501b80ab61a640d3bfacfa5f97aa982d.jpg" alt="Grilled Salmon">
+                  <h3>Grilled Salmon</h3>
+                  <p>Fresh salmon fillet grilled to perfection, served with seasonal vegetables.</p>
+               </div>
+               <div class="menu-item" data-category="mains">
+                  <img src="https://www.leggesofbromyard.com/app/uploads/2020/11/305D2BBD-8ADF-4F90-B12C-CD6F4DB4A0F7.jpeg" alt="Beef Tenderloin">
+                  <h3>Beef Tenderloin</h3>
+                  <p>Premium cut beef tenderloin with a red wine reduction sauce.</p>
+               </div>
+               <!-- Desserts -->
+               <div class="menu-item" data-category="desserts">
+                  <img src="https://static01.nyt.com/images/2017/04/05/dining/05COOKING-TIRAMISU1/05COOKING-TIRAMISU1-googleFourByThree-v2.jpg" alt="Tiramisu">
+                  <h3>Tiramisu</h3>
+                  <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+               </div>
+               <div class="menu-item" data-category="desserts">
+                  <img src="https://www.thespruceeats.com/thmb/w3Ue6q46mfyPcp23GuAGIGO4Qf8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dark-chocolate-molten-lava-cakes-recipe-304685-hero-01-147fcbb3286b49a59fc30149b64bbf7e.jpg" alt="Chocolate Lava Cake">
+                  <h3>Chocolate Lava Cake</h3>
+                  <p>Decadent chocolate cake with a molten center, served with vanilla ice cream.</p>
+               </div>
+            </div>
+         </section>
+         <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>
+               Welcome to The Royal Oak Steakhouse, a culinary cornerstone in the heart of Yorkshire since 1982. Our passion for premium beef and British hospitality has made us a beloved destination for steak enthusiasts across the United Kingdom.
+               Founded by the Thompson family, our restaurant began as a humble pub serving locally-sourced meats. Over four decades, we've refined our craft, partnering with the finest cattle farms in the Yorkshire Dales and beyond to bring you an unparalleled dining experience.
+            </p>
+         </section>
+         <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+               <input type="text" placeholder="Name" required>
+               <input type="email" placeholder="Email" required>
+               <textarea placeholder="Message" required></textarea>
+               <button type="submit">Send Message</button>
+            </form>
+         </section>
+      </main>
+      <footer>
+         <div class="footer-content">
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>14 Millstone Lane<br>
+                Harrogate, North Yorkshire<br>
+                HG1 2TZ<br>
+                United Kingdom</p>
+            </div>
+            <div class="footer-section">
+               <h3>Hours</h3>
+               <p>Mon-Fri: 11am-10pm<br>Sat-Sun: 10am-11pm</p>
+            </div>
+            <div class="footer-section">
+               <h3>Follow Us</h3>
+               <div class="social-icons">
+                  <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            &copy; 2024 The Royal Oak. All rights reserved.
+         </div>
+      </footer>
+   </body>
+</html>
